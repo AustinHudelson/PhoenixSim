@@ -5,7 +5,7 @@
 #include <sol/sol.hpp>
 
 #include "DLLExport.h"
-#include "Features.h"
+#include "PhoenixFeatures.h"
 #include "LuaFP64.h"
 
 namespace Phoenix
