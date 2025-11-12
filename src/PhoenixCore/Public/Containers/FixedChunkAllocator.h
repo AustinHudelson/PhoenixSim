@@ -13,6 +13,9 @@ namespace Phoenix
         struct Handle
         {
             uint32 Id = -1;
+
+            constexpr Handle() = default;
+            constexpr Handle(uint32 id) : Id(id) {}
         };
 
         struct Chunk

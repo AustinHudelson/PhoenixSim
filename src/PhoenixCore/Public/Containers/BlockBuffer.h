@@ -23,6 +23,11 @@ namespace Phoenix
             size_t Size = 0;
             uint8 Priority = 0;
             const TypeDescriptor* Type = nullptr;
+
+            BlockDefinition(FName name, size_t size, uint8 priority, const TypeDescriptor* type)
+                : Name(name), Size(size), Priority(priority), Type(type)
+            {
+            }
         };
 
         struct CtorArgs

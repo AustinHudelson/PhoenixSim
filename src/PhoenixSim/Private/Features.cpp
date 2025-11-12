@@ -164,6 +164,11 @@ struct FeatureChannelInsert
     FName Feature;
     FName Channel;
     FeatureInsertPosition InsertPosition;
+
+    FeatureChannelInsert(FName feature, const FName& channel, const FeatureInsertPosition& insertPosition)
+        : Feature(feature), Channel(channel), InsertPosition(insertPosition)
+    {
+    }
 };
 
 void FeatureSet::RegisterFeatureChannels(const TArray<FeatureSharedPtr>& features)
